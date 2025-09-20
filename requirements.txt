@@ -2,7 +2,7 @@ flask
 pytesseract
 pdf2image
 pillow
-python-magic-bin 
+python-magic 
 google-generativeai
 python-dotenv
 requests
