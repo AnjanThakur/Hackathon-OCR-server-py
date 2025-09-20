@@ -17,12 +17,8 @@ load_dotenv()
 
 # 1. Configure Tesseract executable path
 # Ensure this path is correct for your system.
-if platform.system() == "Windows":
-    # Local development on your laptop
-    pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
-else:
     # On Railway (Linux), tesseract will be installed in PATH
-    pytesseract.pytesseract.tesseract_cmd = "tesseract"
+pytesseract.pytesseract.tesseract_cmd = "tesseract"
 # 2. Configure Gemini API Key
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
