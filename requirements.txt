@@ -1,0 +1,8 @@
+flask
+pytesseract
+pdf2image
+pillow
+python-magic-bin ; sys_platform == "win32"
+python-magic     ; sys_platform != "win32"
+google-generativeai
+python-dotenv
